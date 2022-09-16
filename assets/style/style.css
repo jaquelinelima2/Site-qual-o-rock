@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -7,14 +9,18 @@
 }
 
 :root{
-  --color-01:rgb(179, 101, 252);
-  --color-02: rgb(27, 20, 20);
-  --color-03: rgb(247, 199, 199);
+  --color-01:hsl(32, 93%, 63%);
+  --color-02: hsl(0, 15%, 9%);
+  --color-03: hsl(66, 88%, 46%);
+  --color-04: linear-gradient(180deg, #C7DB0E 0%, #D6E452 14.29%, #D6E452 46.43%, #C7DB0E 85.71%, #C7DB0E 87.5%), linear-gradient(180deg, #C7DB0E 0%, #D6E452 80.36%, #F1F4CD 100%);
   --font-01:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --font-02:'Roboto Slab', serif;
 }
 
 body{
   background: var(--color-02);
+  font-family:var(--font-02);
+
 }
 
 header{
@@ -41,8 +47,9 @@ section{
   font-family: var(--font-01);
   width: 410px;
   height: 260px;
-  padding: 50px 1em 0 1em;
+  padding: 30px 1em 0 1em;
   border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  
 }
 
@@ -56,10 +63,13 @@ input[type="button"]{
   width:100px;
   padding: 5px;
   font-weight: bold;
+  font-size: 1rem;
+  font-family: var(--font-02);
+  letter-spacing: 1px;
   border-radius: 20px;
   margin: 20px;
   cursor: pointer;
-  background: var(--color-03);
+  background: var(--color-04);
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.2));
 }
 
